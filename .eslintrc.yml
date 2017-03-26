@@ -10,6 +10,10 @@ rules:
     - off
   comma-dangle:
     - off
+  no-bitwise:
+    - error
+    - allow:
+      - '~'
   react/jsx-filename-extension:
     - off
   react/no-did-mount-set-state:
