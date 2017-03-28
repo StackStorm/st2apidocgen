@@ -1,21 +1,12 @@
-#!/usr/bin/env node
 /* eslint global-require:off */
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 /* eslint import/newline-after-import:off */
 
 /* eslint no-param-reassign:off */
 
-const {
-  _: [spec],
-  render,
-  serve,
-  watch,
-  output,
-} = require('minimist')(process.argv.slice(2));
-
 const files = {};
 
-(async () => {
+module.exports = async (spec, render, serve, watch, output) => {
   require('./lib/preload')(files, { spec });
   require('./lib/process')(files, { watch });
   if (render) {
@@ -28,4 +19,4 @@ const files = {};
   if (output) {
     require('./lib/output')(files, { output });
   }
-})();
+};
