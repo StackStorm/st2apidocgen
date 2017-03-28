@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@stackstorm/koa-logger": "2.0.1",
     "axios": "0.15.3",
     "babel-eslint": "7.1.1",
     "babel-plugin-transform-class-properties": "6.23.0",
@@ -24,8 +25,8 @@
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.10.0",
+    "jsdom": "9.12.0",
     "koa": "2.2.0",
-    "@stackstorm/koa-logger": "2.0.1",
     "koa-send": "3.3.0",
     "koa-static": "3.0.0",
     "mime-types": "2.1.14",
