@@ -30,6 +30,7 @@
     "koa": "2.2.0",
     "koa-send": "3.3.0",
     "mime-types": "2.1.14",
+    "minimist": "1.2.0",
     "postcss": "5.2.16",
     "postcss-color-function": "3.0.0",
     "postcss-modules": "0.6.4",
