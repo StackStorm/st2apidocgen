@@ -11,7 +11,7 @@ const {
 } = require('minimist')(process.argv.slice(2));
 
 if (help) {
-  console.log(`Usage: ${name} [spec] [--watch] [--render] [--serve [port]] [--output [directory]]`);
+  console.log(`Usage: ${name} [spec] [--watch] [--render [base_url]] [--serve [port]] [--output [directory]]`);
   return;
 }
 

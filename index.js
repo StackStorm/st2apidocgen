@@ -11,7 +11,7 @@ module.exports = async (spec, render, serve, watch, output) => {
   require('./lib/process')(files, { watch });
   if (render) {
     const locations = await require('./lib/survey')(files);
-    require('./lib/render')(files, { locations });
+    require('./lib/render')(files, { render, locations });
   }
   if (serve) {
     require('./lib/serve')(files, { port: serve });
