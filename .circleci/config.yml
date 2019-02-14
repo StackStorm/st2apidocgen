@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:10
+    working_directory: ~/st2apidocgen
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Lint
+          command: npm run lint --silent
+      - run:
+          name: Test
+          command: npm test
