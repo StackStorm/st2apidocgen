@@ -2,12 +2,12 @@
 const { name } = require('../package.json');
 
 const {
-  _: [spec],
+  _: [ spec ],
   render,
   serve,
   watch,
   output,
-  help
+  help,
 } = require('minimist')(process.argv.slice(2));
 
 if (help) {
