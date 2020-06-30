@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/StackStorm/st2apidocgen",
   "devDependencies": {
-    "@babel/core": "^7.10.3",
+    "@babel/core": "7.0.0",
     "babel-eslint": "10.0.2",
     "eslint": "^6.0.1",
     "eslint-plugin-import": "^2.18.0",
